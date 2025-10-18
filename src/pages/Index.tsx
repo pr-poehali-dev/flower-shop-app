@@ -22,21 +22,21 @@ const products: Product[] = [
     id: 1,
     name: 'Розы и пионы',
     price: 3500,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/79bd851d-62f5-4e42-900d-172bace0f3f0.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/335a0542-db71-4fee-860a-43f88ffeebaa.jpg',
     description: 'Нежный букет из розовых роз и белых пионов'
   },
   {
     id: 2,
     name: 'Тюльпаны',
     price: 2800,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/b2dc1881-a78c-4050-901e-36ce275ca596.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/b4faabb1-c336-4ebd-be33-d23ed12b622f.jpg',
     description: 'Элегантные тюльпаны в персиковых тонах'
   },
   {
     id: 3,
     name: 'Полевые цветы',
     price: 2200,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/3947f413-f164-45e7-8055-60502dd82a42.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/d0d9f099-f5c3-4341-af5f-b3d14d7be02f.jpg',
     description: 'Букет из ромашек и лаванды'
   }
 ];
@@ -211,51 +211,72 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="about" className="mb-12 py-8 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">О магазине</h2>
-          <Card className="p-6">
+        <section id="about" className="mb-12 animate-fade-in">
+          <Card className="p-8">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">О магазине</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Мы работаем с цветами более 10 лет. Каждый букет создаётся с любовью и вниманием к деталям.
+              Флора — это больше, чем цветочный магазин. Мы создаём букеты, которые передают эмоции и делают каждый день особенным.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Используем только свежие цветы от проверенных поставщиков. Доставка в день заказа.
-            </p>
+            <div className="grid gap-4 mt-6">
+              <div className="flex items-start gap-3">
+                <Icon name="Flower" size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">Свежесть</h3>
+                  <p className="text-sm text-muted-foreground">Получаем цветы напрямую от поставщиков каждое утро</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Icon name="Truck" size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">Доставка</h3>
+                  <p className="text-sm text-muted-foreground">Доставляем букеты бережно и точно в срок</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Icon name="Heart" size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">С любовью</h3>
+                  <p className="text-sm text-muted-foreground">Каждый букет создан с душой и вниманием к деталям</p>
+                </div>
+              </div>
+            </div>
           </Card>
         </section>
 
-        <section id="contacts" className="mb-12 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Контакты</h2>
-          <Card className="p-6">
+        <section id="contact" className="mb-12 animate-fade-in">
+          <Card className="p-8">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">Контакты</h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Icon name="MapPin" size={20} className="text-primary mt-1" />
-                <div>
-                  <p className="font-semibold text-foreground">Адрес</p>
-                  <p className="text-muted-foreground">ул. Цветочная, 15</p>
-                </div>
+              <div className="flex items-center gap-3">
+                <Icon name="Phone" size={20} className="text-primary" />
+                <a href="tel:+79991234567" className="text-foreground hover:text-primary transition-colors">
+                  +7 (999) 123-45-67
+                </a>
               </div>
-              <div className="flex items-start gap-3">
-                <Icon name="Phone" size={20} className="text-primary mt-1" />
-                <div>
-                  <p className="font-semibold text-foreground">Телефон</p>
-                  <p className="text-muted-foreground">+7 (999) 123-45-67</p>
-                </div>
+              <div className="flex items-center gap-3">
+                <Icon name="Mail" size={20} className="text-primary" />
+                <a href="mailto:hello@flora.ru" className="text-foreground hover:text-primary transition-colors">
+                  hello@flora.ru
+                </a>
               </div>
-              <div className="flex items-start gap-3">
-                <Icon name="Clock" size={20} className="text-primary mt-1" />
-                <div>
-                  <p className="font-semibold text-foreground">Время работы</p>
-                  <p className="text-muted-foreground">Ежедневно с 9:00 до 21:00</p>
-                </div>
+              <div className="flex items-center gap-3">
+                <Icon name="MapPin" size={20} className="text-primary" />
+                <span className="text-foreground">Москва, ул. Цветочная, д. 5</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Icon name="Clock" size={20} className="text-primary" />
+                <span className="text-foreground">Ежедневно с 9:00 до 21:00</span>
               </div>
             </div>
           </Card>
         </section>
       </main>
 
-      <footer className="bg-muted py-8 mt-12">
+      <footer className="bg-muted/30 border-t border-border py-8">
         <div className="container mx-auto px-4 max-w-md text-center">
-          <p className="text-muted-foreground">© 2024 Флора. Все права защищены</p>
+          <p className="text-sm text-muted-foreground">
+            © 2024 Флора. Цветы с душой
+          </p>
         </div>
       </footer>
     </div>
