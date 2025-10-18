@@ -22,21 +22,21 @@ const products: Product[] = [
     id: 1,
     name: 'Розы и пионы',
     price: 3500,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/cf7efe6e-f563-4aaa-88dc-93a6d8dcf791.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/79bd851d-62f5-4e42-900d-172bace0f3f0.jpg',
     description: 'Нежный букет из розовых роз и белых пионов'
   },
   {
     id: 2,
     name: 'Тюльпаны',
     price: 2800,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/71536688-8a31-4543-a8f6-15a54e9f2e90.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/b2dc1881-a78c-4050-901e-36ce275ca596.jpg',
     description: 'Элегантные тюльпаны в персиковых тонах'
   },
   {
     id: 3,
     name: 'Полевые цветы',
     price: 2200,
-    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/d8836655-5548-425b-a2a6-effd200dddcc.jpg',
+    image: 'https://cdn.poehali.dev/projects/dc437e53-7892-4daf-ae6c-bc0d138d7a16/files/3947f413-f164-45e7-8055-60502dd82a42.jpg',
     description: 'Букет из ромашек и лаванды'
   }
 ];
